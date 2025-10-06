@@ -4,7 +4,7 @@
 <header>
     <div class="container">
         <div class="branding">
-            <img src="logo.png" alt="Logo Diskominfo">
+            <img src="logo/logo.png" alt="Logo Diskominfo">
             <h1>Diskominfo</h1>
         </div>
 

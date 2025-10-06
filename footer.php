@@ -1,10 +1,10 @@
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-logo">
-      <img src="logo.png" alt="Logo Diskominfo">
+      <img src="logo/logo.png" alt="Logo Diskominfo">
       <h3>Diskominfo</h3>
       <div class="footer-social">
-        <a href="#"><img src="logo/web.png" alt="Web"></a>
+        <a href="https://diskominfo.lamongankab.go.id/"><img src="logo/web.png" alt="Web"></a>
         <a href="https://lapor.go.id/"><img src="logo/lapor.png" alt="Website"></a>
         <a href="https://www.instagram.com/diskominfo.lamongan"><img src="logo/instag.png" alt="Instagram"></a>
         <a href="https://www.tiktok.com/@lamongankab"><img src="logo/tiktok.png" alt="TikTok"></a>
