@@ -1,12 +1,12 @@
 <?php
 // Konfigurasi koneksi ke database
  $host   = "localhost";
- $user   = "root"; // User default XAMPP
- $pass   = ""; // Password default XAMPP kosong
+ $user   = "root";
+ $pass   = ""; 
  $dbname = "db_diskominfo";
 
 // Membuat koneksi
- $conn = new mysqli($host, $user, $pass, $dbname);
+    $conn = new mysqli($host, $user, $pass, $dbname);
 
 // Cek koneksi
 if ($conn->connect_error) {

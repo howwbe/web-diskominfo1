@@ -21,137 +21,222 @@ body {
 /* ==========================================================
    GAYA HEADER
    ========================================================== */
-header {
-    background: #4a8ddb; /* Warna biru tua yang lebih formal */
-    color: #ffffff;
-    padding: 1rem 0;
-    border-bottom: 3px solid #ffcc00; /* Aksen warna emas */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    position: sticky; /* Membuat header menempel di atas saat scroll */
-    top: 0;
-    z-index: 1000;
+/* === HEADER UTAMA === */
+/* === HEADER === */
+        header {
+            background: #4a8ddb;
+            color: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #ffcc00;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .branding {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .branding img {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        header .branding h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 25px;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-bottom: 5px;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        header nav ul li a:hover {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        /* === SLIDER === */
+        .carousel {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 40px;
+        }
+
+        .carousel-item {
+            height: 60vh;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* === LINK TERKAIT === */
+        .link-terkait {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .link-terkait h3 {
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .link-terkait .images a {
+            display: inline-block;
+            margin: 15px;
+            transition: transform 0.3s;
+        }
+
+        .link-terkait .images a:hover {
+            transform: scale(1.1);
+        }
+
+        .link-terkait img {
+            height: 70px;
+            width: auto;
+        }
+
+        /* === BERITA === */
+        #berita-utama {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        #berita-utama h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        #berita-utama .card {
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        #berita-utama .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        #berita-utama .card-content {
+            padding: 20px;
+        }
+
+        #berita-utama .card-content h3 {
+            margin-bottom: 10px;
+            color: #004aad;
+        }
+
+        #berita-utama .card-content a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        #berita-utama .card-content a:hover {
+            text-decoration: underline;
+        }
+
+.footer {
+  background: #2a8cdb;
+  padding: 30px 50px;
+  color: #000000;
+  margin-top: 40px;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between; /* Logo di kiri, menu di kanan */
-    align-items: center;
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-header.img {
-    height: 10px; /* Sesuaikan tinggi gambar */
-    width: 10px;
-}
-header .branding h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 10px;
 }
 
-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex; /* Menampilkan menu secara horizontal */
+.footer-logo h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-header nav ul li {
-    margin-left: 25px; /* Jarak antar menu */
+.footer-social a img {
+  width: 24px;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
 }
 
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding-bottom: 5px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 2px solid transparent;
+.footer-social a img:hover {
+  transform: scale(1.1);
 }
 
-/* Efek saat hover pada menu */
-header nav ul li a:hover,
-header nav ul li a.active {
-    color: #ffcc00; /* Warna emas saat hover/aktif */
-    border-bottom: 2px solid #ffcc00;
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-
-/* ==========================================================
-   GAYA KONTEN UTAMA (BERITA, DLL)
-   ========================================================== */
-section#berita-utama {
-    padding: 40px 0;
-    background: #fff;
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-section#berita-utama h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #003d82;
-    font-size: 2.2rem;
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.footer-bottom img {
+  max-width: 150px;
+  margin-bottom: 10px;
 }
-
-.card:hover {
-    transform: translateY(-5px); /* Efek mengambang saat hover */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content h3 {
-    margin-top: 0;
-    font-size: 1.3rem;
-    color: #003d82;
-}
-
-.card-content a {
-    color: #0056b3;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card-content a:hover {
-    text-decoration: underline;
-}
-
-
-/* ==========================================================
-   GAYA FOOTER
-   ========================================================== */
-footer {
-    background: #222; /* Warna abu-abu gelap */
-    color: #f4f4f4;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-    border-top: 3px solid #003d82;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-
 /* ==========================================================
    GAYA RESPONSIF (UNTUK LAYAR HP/TABLET)
    ========================================================== */
@@ -221,14 +306,20 @@ footer p {
 .tab-content.active {
   display: block;
 }
-
-.banner-profil {
+#mainSlider .carousel-item {
   width: 100%;
-  max-height: 500px;
-  object-fit: contain;
-  display: block;
-  margin: 20px 0;
+  height: 75vh; /* ubah ke 100vh kalau mau penuh satu layar */
+  overflow: hidden;
 }
+
+#mainSlider .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* isi penuh tanpa distorsi */
+  object-position: center; /* fokus di tengah */
+  display: block;
+}
+
 
 /* Animasi transisi */
 @keyframes fadeIn {
@@ -252,6 +343,116 @@ footer p {
       margin-left: 20px;
     }
 
-    .slideshow-container {
-        display: none !important;
-    }
+/* ==========================================================
+GAYA LINK TERKAIT
+   ========================================================== */
+.link-terkait {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.link-terkait a {
+  margin: 40px 10px;
+  text-decoration: none;
+  color: #124874;
+  font-size: 14px;
+}
+
+.link-terkait img {
+  width: 100px;
+  height: auto;
+}
+
+.link-terkait {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.link-terkait h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.link-terkait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-terkait img {
+  width: 200px;
+  margin: 10px;
+}
+
+.link-terkait .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ 
+/* =========================================================*/
+    
+.layanan {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.layanan h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #004d99;
+}
+
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.layanan-card {
+  background: #2b69a8;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.layanan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.layanan-card .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.layanan-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.layanan-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.layanan-card .btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #00b894;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.layanan-card .btn:hover {
+  background: #019874;
+}

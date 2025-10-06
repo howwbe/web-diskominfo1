@@ -14,10 +14,10 @@
       <h1>DISKOMINFO</h1>
     </div>
     <nav>
-      <a href="index.html">Beranda</a>
+      <a href="index.php">Beranda</a>
       <a href="profil.html">Profil</a>
       <a href="galeri.html">Galeri</a>
-      <a href="layanan.html">Layanan</a>
+      <a href="layanan.php">Layanan</a>
       <a href="dokumenpublik.html">Dokumen Publik</a>
       <a href="ppid.html">PPID</a>
       <a href="fag.html">FAQ</a>
@@ -29,7 +29,7 @@
     <div class="breadcrumb">
       <a href="index.html">Home</a> / <span>layanan</span>
     </div>
-
+    </div>
 <main>
   <section class="layanan">
     <h2>Layanan Diskominfo</h2>
@@ -46,7 +46,7 @@
         <div class="icon">📜</div>
         <h3>Cek Rekening</h3>
         <p>Layanan untuk memonitor transparansi informasi pemerintah.</p>
-        <a href="cekrekening.html" class="btn">Detail Layanan</a>
+        <a href="cekrekening.php" class="btn">Detail Layanan</a>
       </div>
 
       <div class="layanan-card">
@@ -79,44 +79,8 @@
     </div>
   </section>
 </main>
-
-<!-- FOOTER -->
-  <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-logo">
-      <img src="logo.png" alt="Logo Diskominfo">
-      <h3>diskominfo</h3>
-      <div class="footer-social">
-        <a href="index.html"><img src="web.png" alt="Web"></a>
-        <a href="https://lapor.go.id/"><img src="lapor.png" alt="Website"></a>
-        <a href="https://www.instagram.com/diskominfo.lamongan"><img src="instag.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@lamongankab"><img src="tiktok.png" alt="TikTok"></a>
-        <a href="https://www.youtube.com/@lamongankabtv"><img src="youtube.png" alt="YouTube"></a>
-      </div>
-    </div>
-
-    <div class="footer-column">
-      <h4>INFORMASI</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed ligula nec ipsum volutpat tristique.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>AGENDA</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed ligula nec ipsum volutpat tristique.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>PENGUMUMAN</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed ligula nec ipsum volutpat tristique.</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <img src="lamongan.png" alt="Lamongan Megilan">
-    <p>&copy; 2025 Diskominfo Kabupaten Lamongan</p>
-  </div>
-</footer>
-
-
 </body>
 </html>
+ <?php
+ include 'footer.php';  
+?>

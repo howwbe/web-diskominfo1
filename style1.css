@@ -1,0 +1,575 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== HEADER ==========
+   PERBAIKAN: .logo-area diubah menjadi .branding
+*/
+/* Contoh selector yang benar untuk header Anda */
+header {
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header .branding {
+  display: flex;
+  align-items: center;
+}
+
+header .branding img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ========== BANNER & HERO ========== */
+.banner img, .hero img {
+  width: 100%;
+  height: 500px; /* Hero img bisa disesuaikan */
+  object-fit: cover;
+  display: block;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 0px 0;
+}
+
+/* ========== BERITA (GABUNGAN) ========== */
+.berita {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.berita h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.berita-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.berita-item img {
+  width: 120px;
+  height: 90px;
+  background: #ccc;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.berita-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* ========== LINK TERKAIT (GABUNGAN) ========== */
+.link-terkait {
+  text-align: center;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-terkait h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.link-terkait .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link-terkait .images img {
+  width: 200px;
+  margin: 10px;
+}
+
+.link-terkait a {
+  margin: 40px 10px;
+  text-decoration: none;
+  color: #124874;
+  font-size: 14px;
+}
+
+/* ========== FOOTER (GABUNGAN) ========== */
+.footer {
+  background: #2a8cdb; /* Menggunakan warna dari definisi kedua */
+  padding: 30px 50px;
+  margin-top: 40px;
+  color: #000;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 50px; /* Menggunakan ukuran dari definisi kedua */
+  margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-social a img {
+  width: 24px;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/* ========== HALAMAN LAYANAN ========== */
+.layanan {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.layanan h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #004d99;
+}
+
+.layanan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.layanan-card {
+  background: #2b69a8;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.layanan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.layanan-card .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.layanan-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.layanan-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.layanan-card .btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #00b894;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.layanan-card .btn:hover {
+  background: #019874;
+}
+
+/* ========== HALAMAN PROFIL & ADUAN ========== */
+.profil, .aduanmasyarakat, .cekrekening, .csrit, .yes, .satudata, .span, .ppid {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.profil-menu, .ad-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  color: #0066cc;
+}
+
+.tab.active {
+  border-bottom: 3px solid #0066cc;
+  color: #0066cc;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.banner-profil, .banner-aduan {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
+/* ========== HALAMAN GALERI ========== */
+.galeri {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.galeri h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c4c9c;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  background: #fff;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card.foto:hover {
+  border-color: #0275d8;
+  background: #eaf3ff;
+}
+
+.card.video:hover {
+  border-color: #d9534f;
+  background: #ffecec;
+}
+
+/* ========== BREADCRUMB ========== */
+.breadcrumb {
+  background: #eee;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #2c4c9c;
+  font-weight: bold;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: #d9534f;
+}
+
+/* ========== DOKUMEN PUBLIK ========== */
+.page-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filters select:hover {
+  border-color: #3683d1;
+}
+
+.dokumen-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.dokumen-table th,
+.dokumen-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.dokumen-table th {
+  background: #3683d1;
+  font-weight: bold;
+}
+
+.dokumen-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.dokumen-table tbody tr:hover {
+  background: #eaf3ff; /* Sedikit lebih terang dari header */
+}
+
+.dokumen-table td i {
+  color: #3683d1;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.dokumen-table td i:hover {
+  color: #1a5fa7;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.pagination button:hover:not(.active):not(:disabled) {
+  background: #ddd;
+}
+
+.pagination button.active {
+  background: #3683d1;
+  color: #fff;
+  font-weight: bold;
+  border-color: #3683d1;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#info {
+  text-align: left;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* ========== ANIMASI & UTILITAS ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #2c4c9c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #1a336b;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 992px) {
+  .berita-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .berita-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .layanan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .berita {
+    padding: 0 10px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .layanan-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
