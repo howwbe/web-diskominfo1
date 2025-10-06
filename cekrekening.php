@@ -1,36 +1,20 @@
+<?php
+  include 'header.php'; 
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cek Rekening | Diskominfo Lamongan</title>
- <link rel="stylesheet" href="style1.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="branding">
-            <img src="logo/logo.png" alt="Logo Diskominfo">
-            <h1>Diskominfo</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.php">Beranda</a></li>
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Galeri</a></li>
-                <li><a href="layanan.php">Layanan</a></li>
-                <li><a href="#">Dokumen Publik</a></li>
-                <li><a href="#">PPID</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
   <main>
     <section class="cekrekening">
-      <h2>Cek Rekening</h2>
+      <h2 class="judul">Cek Rekening</h2>
       <img src="logo/crek.png" alt="Banner Cek Rekening" class="banner-aduan">
+      <div class="isi-rekening">
       <p>CekRekening.id adalah Kanal Layanan Pencegahan Tindak Pidana resmi dari <b>Kementerian Komunikasi dan Digital Republik Indonesia</b> yang difungsikan sebagai portal untuk melakukan pelaporan dan pencarian rekening bank dan e-wallet terindikasi tindak pidana. Selain dua hal tersebut, cekrekening.id juga memiliki fitur untuk pemberian whitelist rekening yang terpercaya yang diajukan oleh masyarakat.</p>
 
       <p>Masyarakat dapat melaporkan rekening-rekening yang terindikasi kejahatan seperti penipuan online, investasi fiktif, pemerasan, prostitusi online, judi online, terorisme, dan lain-lain.</p>
@@ -45,42 +29,11 @@
       <p>Layanan CekRekening.id sepenuhnya diselenggarakan oleh Kementerian Komunikasi dan Digital Republik Indonesia. Dinas Komunikasi dan Informatika Kabupaten Lamongan hanya berperan dalam menyebarluaskan informasi agar masyarakat lebih terlindungi dari potensi tindak pidana digital.</p>
 
       <p><a href="https://cekrekening.id/" target="_blank" rel="noopener noreferrer">https://cekrekening.id/</a></p>
+</div>
     </section>
   </main>
 </body>
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-logo">
-      <img src="logo/logo.png" alt="Logo Diskominfo">
-      <h3>Diskominfo</h3>
-      <div class="footer-social">
-        <a href="#"><img src="logo/web.png" alt="Web"></a>
-        <a href="https://lapor.go.id/"><img src="logo/lapor.png" alt="Website"></a>
-        <a href="https://www.instagram.com/diskominfo.lamongan"><img src="logo/instag.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@lamongankab"><img src="logo/tiktok.png" alt="TikTok"></a>
-        <a href="https://www.youtube.com/@lamongankabtv"><img src="logo/youtube.png" alt="YouTube"></a>
-      </div>
-    </div>
-
-    <div class="footer-column">
-      <h4>INFORMASI</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>AGENDA</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>PENGUMUMAN</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <img src="logo/lamongan.png" alt="Lamongan Megilan">
-    <p>&copy; <?php echo date('Y'); ?> Dinas Komunikasi dan Informatika. All Rights Reserved.</p>
-  </div>
-</footer>
 </html>
+<?php
+  include 'footer.php';
+?>

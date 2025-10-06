@@ -1,35 +1,16 @@
+<?php
+  include 'header.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layanan | Diskominfo Lamongan</title>
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <div class="logo-area">
-      <img src="logo.png" alt="Logo Diskominfo">
-      <h1>DISKOMINFO</h1>
-    </div>
-    <nav>
-      <a href="index.php">Beranda</a>
-      <a href="profil.html">Profil</a>
-      <a href="galeri.html">Galeri</a>
-      <a href="layanan.php">Layanan</a>
-      <a href="dokumenpublik.html">Dokumen Publik</a>
-      <a href="ppid.html">PPID</a>
-      <a href="fag.html">FAQ</a>
-    </nav>
-  </header>
-  <div class="container">
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-      <a href="index.html">Home</a> / <span>layanan</span>
-    </div>
-    </div>
+<div class="container">
 <main>
   <section class="layanan">
     <h2>Layanan Diskominfo</h2>

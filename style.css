@@ -19,43 +19,41 @@ body {
 }
 
 /* ==========================================================
-   GAYA HEADER
+    HEADER
    ========================================================== */
-/* === HEADER UTAMA === */
-/* === HEADER === */
-        header {
-            background: #4a8ddb;
-            color: #ffffff;
-            padding: 1rem 0;
-            border-bottom: 3px solid #ffcc00;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+header {
+  background: #4a8ddb;
+  color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 3px solid #ffcc00;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        header .branding {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+header .branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-        header .branding img {
-            height: 50px;
-            width: auto;
-            display: block;
-        }
+header .branding img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
 
-        header .branding h1 {
-            margin: 0;
-            font-size: 1.8rem;
-            font-weight: 600;
+header .branding h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
             color: #fff;
         }
 
@@ -138,132 +136,89 @@ body {
             height: 70px;
             width: auto;
         }
-
-        /* === BERITA === */
-        #berita-utama {
-            padding: 60px 0;
-            background-color: #fff;
-        }
-
-        #berita-utama h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        #berita-utama .card {
-            margin-bottom: 30px;
-            border: none;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        #berita-utama .card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        #berita-utama .card-content {
-            padding: 20px;
-        }
-
-        #berita-utama .card-content h3 {
-            margin-bottom: 10px;
-            color: #004aad;
-        }
-
-        #berita-utama .card-content a {
-            color: #004aad;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        #berita-utama .card-content a:hover {
-            text-decoration: underline;
-        }
-
-.footer {
-  background: #2a8cdb;
-  padding: 30px 50px;
-  color: #000000;
-  margin-top: 40px;
+/* ==========================================================
+  BERITA 
+   ========================================================== */
+.berita-terkini {
+  padding: 60px 0;
+  background-color: #ffffff;
 }
 
-.footer-top {
+.berita-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.footer-logo img {
-  width: 50px;
-  margin-bottom: 10px;
+.berita-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer-logo h3 {
-  font-size: 20px;
+.berita-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.berita-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.berita-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.kategori {
+  background-color: #007bff;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  width: fit-content;
+  margin-bottom: 0.5rem;
 }
 
-.footer-social a img {
-  width: 24px;
-  margin-right: 8px;
-  transition: transform 0.2s ease;
+.berita-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer-social a img:hover {
-  transform: scale(1.1);
+.berita-item h3 a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-.footer-column h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.berita-item h3 a:hover {
+  color: #0056b3;
 }
 
-.footer-column p {
-  font-size: 14px;
-  line-height: 1.5;
+.berita-item time {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
 }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.footer-bottom img {
-  max-width: 150px;
-  margin-bottom: 10px;
+.berita-item p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
 }
 /* ==========================================================
-   GAYA RESPONSIF (UNTUK LAYAR HP/TABLET)
+    PROFIL
    ========================================================== */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column; /* Logo dan menu menumpuk ke bawah */
-        text-align: center;
-    }
-
-    header .branding {
-        margin-bottom: 15px;
-    }
-
-    header nav ul {
-        justify-content: center;
-        flex-wrap: wrap; /* Menu pindah ke baris baru jika tidak muat */
-    }
-
-    header nav ul li {
-        margin: 5px 15px; /* Jarak menu di layar kecil */
-    }
-
-    section#berita-utama h2 {
-        font-size: 1.8rem;
-    }
-}
-/* MENU PROFIL */
 .profil {
   max-width: 1000px;
   margin: 30px auto;
@@ -389,10 +344,84 @@ GAYA LINK TERKAIT
   justify-content: center;
   flex-wrap: wrap;
 }
+/* ==========================================================
+    MENU PROFIL
+   ========================================================== */
+.profil {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
 
- 
-/* =========================================================*/
-    
+.profil-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  color: #0066cc;
+}
+
+.tab.active {
+  border-bottom: 3px solid #0066cc;
+  color: #0066cc;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.banner-profil {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Animasi transisi */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+   .profil-menu{
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #2c3e50;
+    }
+    h3 {
+      margin-top: 20px;
+      color: #34495e;
+    }
+    ol {
+      margin-left: 20px;
+    }
+/* ==========================================================
+    LAYANAN
+   ========================================================== */
 .layanan {
   padding: 40px 20px;
   text-align: center;
@@ -455,4 +484,205 @@ GAYA LINK TERKAIT
 
 .layanan-card .btn:hover {
   background: #019874;
+}
+/* ==========================================================
+   CEK REKENING
+   ========================================================== */
+.cekrekening{
+  max-width: 1200px;
+  margin: 30px 10px;
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+.isi-rekening{
+  max-width: 1100px;
+  margin-left: 75px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.judul{
+  text-align: center;
+  color: #004d99;
+  margin: 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* ==========================================================
+   GALERI
+   ========================================================== */
+.galeri {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.galeri h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c4c9c;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  background: #fff;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card.foto:hover {
+  border-color: #0275d8;
+  background: #eaf3ff;
+}
+
+.card.video:hover {
+  border-color: #d9534f;
+  background: #ffecec;
+}
+
+.card p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* ===========================
+   PPID
+   ========================== */
+.ppid {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 10px;
+}
+.ppid h2{
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+.btn-ppid{
+  text-align: center;
+  margin: 20px 0;
+}/* ===========================
+   PPID
+   ========================== */
+.ppid {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 10px;
+}
+.ppid h2{
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+.btn-ppid{
+  text-align: center;
+  margin: 20px 0;
+}
+/* ==========================================================
+    FOOTER
+   ========================================================== */
+.footer {
+  background: #2a8cdb;
+  padding: 30px 50px;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-social a img {
+  width: 24px;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+  /* ==========================================================
+    GAYA RESPONSIF (UNTUK LAYAR HP/TABLET)
+    ========================================================== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Logo dan menu menumpuk ke bawah */
+        text-align: center;
+    }
+
+    header .branding {
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        flex-wrap: wrap; /* Menu pindah ke baris baru jika tidak muat */
+    }
+
+    header nav ul li {
+        margin: 5px 15px; /* Jarak menu di layar kecil */
+    }
+
+    section#berita-utama h2 {
+        font-size: 1.8rem;
+    }
 }

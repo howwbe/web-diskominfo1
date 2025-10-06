@@ -1,3 +1,6 @@
+<?php
+  include 'header.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,29 +12,7 @@
 
 </head>
 <body>
-
-<header>
-    <div class="logo-area">
-      <img src="logo.png" alt="Logo Diskominfo">
-      <h1>DISKOMINFO</h1>
-    </div>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="profil.html">Profil</a>
-      <a href="galeri.html">Galeri</a>
-      <a href="layanan.html">Layanan</a>
-      <a href="dokumenpublik.html">Dokumen Publik</a>
-      <a href="ppid.html">PPID</a>
-      <a href="fag.html">FAQ</a>
-    </nav>
-  </header>
   <div class="container">
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-      <a href="index.html">Home</a> / <span>profil</span>
-    </div>
-
 <main>
   <section class="profil">
     <div class="profil-menu">
@@ -44,7 +25,7 @@
     <!-- TENTANG KAMI -->
     <div id="tentang" class="tab-content active">
       <h2>Tentang Kami</h2>
-      <img src="profil.png" alt="Tentang Kami" class="banner-profil">
+      <img src="logo/profil.png" alt="Tentang Kami" class="banner-profil">
       <p>
        Dinas Komunikasi dan Informatika (Diskominfo) Kabupaten Lamongan adalah salah satu perangkat daerah yang berada di bawah instansi Pemerintah Kabupaten Lamongan. Berdasarkan Peraturan Daerah Kabupaten Lamongan Nomor 11 Tahun 2021 tentang Perubahan Kedua atas Peraturan Daerah Nomor 5 Tahun 2016 tentang Pembentukan dan Susunan Perangkat Daerah Kabupaten Lamongan, Diskominfo Kabupaten Lamongan memiliki tugas untuk menyelenggarakan urusan pemerintahan di bidang komunikasi dan informatika, serta bidang persandian dan statistik.
 
@@ -57,7 +38,7 @@ Kantor Dinas Komunikasi dan Informatika Kabupaten Lamongan berlokasi di Gedung P
     <!-- VISI MISI -->
     <div id="visi" class="tab-content">
       <h2>Visi & Misi</h2>
-      <img src="profil.png" alt="Tentang Kami" class="banner-profil">
+      <img src="logo/profil.png" alt="Tentang Kami" class="banner-profil">
       <h3>Visi</h3>
       <p>
         “Terwujudnya pelayanan informasi publik yang transparan, cepat, dan akurat demi mendukung pemerintahan yang
@@ -75,8 +56,8 @@ Kantor Dinas Komunikasi dan Informatika Kabupaten Lamongan berlokasi di Gedung P
     <!-- STRUKTUR ORGANISASI -->
     <div id="struktur" class="tab-content">
       <h2>Struktur Organisasi</h2>
-       <img src="profil.png" alt="Tentang Kami" class="banner-profil">
-      <img src="struktur.png" alt="Struktur Organisasi" class="banner-profil">
+       <img src="logo/profil.png" alt="Tentang Kami" class="banner-profil">
+      <img src="logo/struktur.png" alt="Struktur Organisasi" class="banner-profil">
       <p>Adapun uraian tugas dan fungsi struktur yang ada di Dinas Komunikasi dan Informatika Kabupaten Lamongan sebagai berikut</p>
       <h2>Kepala Dinas</h2>
   <p>Kepala Dinas mempunyai tugas merumuskan kebijakan teknis dan strategis, melaksanakan urusan pemerintahan dan pelayanan umum, pembinaan dan pelaksanaan tugas bidang komunikasi dan informatika serta persandian statistik.</p>
@@ -163,7 +144,7 @@ Kantor Dinas Komunikasi dan Informatika Kabupaten Lamongan berlokasi di Gedung P
     <!-- KONTAK KAMI -->
     <div id="kontak" class="tab-content">
       <h2>Kontak Kami</h2>
-        <img src="profil.png" alt="Tentang Kami" class="banner-profil">
+        <img src="logo/profil.png" alt="Tentang Kami" class="banner-profil">
       <p><strong>Alamat:</strong> Jl. KH. Ahmad Dahlan No. 01, Lamongan</p>
       <p><strong>Email:</strong> diskominfo@lamongan.go.id</p>
       <p><strong>Telepon:</strong> (0322) 123456</p>
@@ -171,47 +152,7 @@ Kantor Dinas Komunikasi dan Informatika Kabupaten Lamongan berlokasi di Gedung P
     </div>
   </section>
 </main>
-
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-logo">
-      <img src="logo.png" alt="Logo Diskominfo">
-      <h3>diskominfo</h3>
-      <div class="footer-social">
-        <a href="#"><img src="youtube.png" alt="YouTube"></a>
-        <a href="#"><img src="facebook.webp" alt="Facebook"></a>
-        <a href="#"><img src="instag.png" alt="Instagram"></a>
-        <a href="#"><img src="lapor.png" alt="Website"></a>
-        <a href="#"><img src="tiktok.png" alt="TikTok"></a>
-      </div>
-    </div>
-
-    <div class="footer-column">
-  <h4>INFORMASI</h4>
-  <p><i class="fas fa-map-marker-alt"></i> Jl. Basuki Rahmad No. 1, Kecamatan Lamongan, Kabupaten Lamongan, Provinsi Jawa Timur, Kode Pos 62214</p>
-  <p><i class="fas fa-envelope"></i> diskominfo@lamongan.go.id</p>
-  <p><i class="fas fa-phone"></i> (0322) 321168</p>
-  <p><i class="fab fa-whatsapp"></i> +628113021708</p>
 </div>
-
-
-    <div class="footer-column">
-      <h4>AGENDA</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed ligula nec ipsum volutpat tristique.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>PENGUMUMAN</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed ligula nec ipsum volutpat tristique.</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <img src="lamongan.png" alt="Lamongan Megilan">
-    <p>&copy; 2025 Diskominfo Kabupaten Lamongan</p>
-  </div>
-</footer>
-
 <script>
 function showTab(tabId, event) {
   document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
@@ -220,6 +161,8 @@ function showTab(tabId, event) {
   event.target.classList.add('active');
 }
 </script>
-
 </body>
 </html>
+<?php
+  include 'footer.php';
+?>
