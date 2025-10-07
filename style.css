@@ -502,13 +502,11 @@ GAYA LINK TERKAIT
   line-height: 1.6;
   color: #333;
 }
-.judul{
+.cekrekening h2{
   text-align: center;
-  color: #004d99;
-  margin: 10px 0;
-  font-size: 28px;
-  font-weight: bold;
+  margin-top: 20px;
 }
+
 /* ==========================================================
    GALERI
    ========================================================== */

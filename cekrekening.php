@@ -12,8 +12,8 @@
 <body>
   <main>
     <section class="cekrekening">
-      <h2 class="judul">Cek Rekening</h2>
-      <img src="logo/crek.png" alt="Banner Cek Rekening" class="banner-aduan">
+      <h2>Cek Rekening</h2>
+      <img src="logo/crek.png" alt="Banner Cek Rekening" class="banner-profil">
       <div class="isi-rekening">
       <p>CekRekening.id adalah Kanal Layanan Pencegahan Tindak Pidana resmi dari <b>Kementerian Komunikasi dan Digital Republik Indonesia</b> yang difungsikan sebagai portal untuk melakukan pelaporan dan pencarian rekening bank dan e-wallet terindikasi tindak pidana. Selain dua hal tersebut, cekrekening.id juga memiliki fitur untuk pemberian whitelist rekening yang terpercaya yang diajukan oleh masyarakat.</p>
 
